@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace GameUnits
 {
-    public class Unit
+    public abstract class Unit
     {
         private int movement;
         public int Health { get; set; }
+        public abstract float Cost { get; }
 
         public Unit(int movement, int health)
         {
