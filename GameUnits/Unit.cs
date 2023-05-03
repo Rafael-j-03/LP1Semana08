@@ -21,5 +21,13 @@ namespace GameUnits
         {
             Console.WriteLine("Unit moved " + movement + " spaces");
         }
+
+        public override string ToString()
+        {
+            // return type of unit, Health and Cost with 2 decimal places
+            return GetType().Name + ":" + 
+            " HP=" + Health + 
+            " COST=" + Cost.ToString("0.00");
+        }
     }
 }
