@@ -18,7 +18,7 @@ namespace GameUnits
 
         public void Move()
         {
-            // Do something
+            Console.WriteLine("Unit moved " + movement + " spaces");
         }
     }
 }
