@@ -14,7 +14,8 @@ namespace GameUnits
 
         public void Attack (Unit u)
         {
-            // Do something
+            XP++;
+            u.Health--;
         }
     }
 }
