@@ -9,6 +9,8 @@ namespace GameUnits
     {
         public int AttackPower { get; }
         public int XP { get; private set; }
+        public override int Health => base.Health + XP;
+        public override float Cost => AttackPower + XP;
 
         public void Attack (Unit u)
         {
