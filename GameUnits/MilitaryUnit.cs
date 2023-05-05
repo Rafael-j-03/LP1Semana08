@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace GameUnits
 {
-    public class MilitaryUnit : Unit
+    public class MilitaryUnit : XPUnit
     {
         public int AttackPower { get; }
-        public int XP { get; private set; }
         public override int Health => base.Health + XP;
         public override float Cost => AttackPower + XP;
 
@@ -27,8 +26,7 @@ namespace GameUnits
         public override string ToString()
         {
             return base.ToString() + 
-            " AP=" + AttackPower +
-            " XP=" + XP;
+            " AP=" + AttackPower;
         }
     }
 }
